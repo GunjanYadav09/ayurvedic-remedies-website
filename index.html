@@ -5,117 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayurvedic Home Remedies - Natural Healing</title>
     <style>
-        :root {
-            --primary-color: #2c6e49;
-            --secondary-color: #4c956c;
-            --accent-color: #fefee3;
-            --light-color: #f9f9f9;
-            --dark-color: #1d3557;
-            --gold-color: #d4a017;
-        }
-        /* ... all your existing CSS unchanged ... */
+        /* ... (all your existing CSS styles remain the same) ... */
     </style>
 </head>
 <body>
-    <!-- Nature Background Animation -->
-    <div class="nature-background">
-        <div class="bg-layer sky"></div>
-        <div class="bg-layer mountains"></div>
-        <div class="bg-layer hills"></div>
-        <div class="bg-layer plants"></div>
-        <div class="floating-leaves">
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-            <div class="leaf">🍃</div>
-        </div>
-    </div>
+    <!-- ... (all your existing HTML remains the same) ... -->
     
     <!-- Content Overlay -->
     <div class="content-overlay">
         <div class="container">
-            <header>
-                <div class="logo">
-                    <span class="logo-icon">🌿</span>
-                    Ayurvedic Remedies
-                </div>
-                <nav>
-                    <a href="#features">Features</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="remedies.html">Remedies</a>
-                </nav>
-            </header>
-            
-            <section class="hero">
-                <h1>Discover Natural Healing with Ayurvedic Remedies</h1>
-                <p>Experience the ancient wisdom of Ayurveda with personalized home remedies for common ailments. Our AI-powered platform provides traditional solutions tailored to your symptoms.</p>
-                <a href="remedies.html" class="cta-button">
-                    Get Started
-                    <span class="cta-icon">→</span>
-                </a>
-            </section>
-            
-            <section id="features" class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🌱</div>
-                    <h3>Natural Solutions</h3>
-                    <p>Get remedies using natural ingredients that are gentle on your body and environment.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🤖</div>
-                    <h3>AI-Powered</h3>
-                    <p>Our advanced AI combines traditional knowledge with modern technology for personalized advice.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Instant Results</h3>
-                    <p>Receive immediate Ayurvedic recommendations tailored to your specific symptoms.</p>
-                </div>
-            </section>
-            
-            <section id="how-it-works" class="how-it-works">
-                <h2>How It Works</h2>
-                <p>Getting your personalized Ayurvedic remedy is simple and straightforward</p>
-                
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <p>Describe your symptoms or health concerns</p>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <p>Our system analyzes your input using Ayurvedic principles</p>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <p>Receive personalized natural remedies you can prepare at home</p>
-                    </div>
-                </div>
-            </section>
-            
-            <footer>
-                <p><strong>Important Note:</strong> This tool provides traditional home remedies for informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare professional for serious medical conditions.</p>
-                
-                <div class="creator-credit">
-                    <p>Made by <span class="creator-name">Gunjan Yadav</span></p>
-                </div>
-            </footer>
+            <!-- ... (all your existing HTML remains the same) ... -->
         </div>
     </div>
 
-    <!-- Added script -->
+    <!-- Add JavaScript section -->
     <script>
+        // API configuration
         const API_BASE_URL = 'https://ayurvedic-remedies-website-backend.onrender.com';
+        
+        // You can add other JavaScript functionality here
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example: Add interactivity to the Get Started button
+            const ctaButton = document.querySelector('.cta-button');
+            if (ctaButton) {
+                ctaButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Here you could add code to connect to your API
+                    console.log('Connecting to API at:', API_BASE_URL);
+                    // For now, just navigate to the remedies page
+                    window.location.href = 'remedies.html';
+                });
+            }
+            
+            // Add any other interactive features here
+        });
     </script>
 </body>
 </html>
